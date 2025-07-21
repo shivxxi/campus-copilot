@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Anything</title>
+  <link rel="stylesheet" href="upload.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+ <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">Campus Copilot</div>
+  <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="upload.html">Upload</a>
+    <a href="pdfread.html">PDF Reader</a>
+  </div>
+</nav>
+
+
+  <!-- Upload Section -->
+  <div class="upload-container">
+    <h1>📁 Upload Your File</h1>
+    <input type="file" id="fileInput" multiple />
+    <button onclick="handleUpload()">Upload & Preview</button>
+    <ul id="previewArea"></ul>
+  </div>
+
+  <script src="upload.js"></script>
+</body>
+</html>

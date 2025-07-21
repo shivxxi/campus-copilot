@@ -1,0 +1,78 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.upload-container {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #333;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  margin: 20px 0;
+  color: white;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+#previewArea {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#previewArea li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 25px;
+  text-align: center;
+}
+
+.delete-btn:hover {
+  background-color: #ff1a1a;
+}

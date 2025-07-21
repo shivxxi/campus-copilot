@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Text Extractor</title>
+  <link rel="stylesheet" href="pdfread.css" />
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">Campus Copilot</div>
+  <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="upload.html">Upload</a>
+    <a href="pdfread.html">PDF Reader</a>
+  </div>
+</nav>
+
+  <div class="container">
+    <h1>📄 Upload PDF & Extract Text</h1>
+
+     <!-- PDF Upload and Extract Button -->
+    <input type="file" id="pdfFile" accept="application/pdf" />
+    <button onclick="extractText()">Extract Text</button>
+
+
+    <!-- Raw extracted text from PDF -->
+    <h3>Extracted Text:</h3>
+    <pre id="output"></pre>
+
+    <!-- Events extracted from the text -->
+    <h3>📅 Extracted Dates/Events:</h3>
+    <ul id="eventList"></ul>
+  </div>
+
+
+  <!-- PDF.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+  <script src="pdfread.js"></script>
+</body>
+</html>
